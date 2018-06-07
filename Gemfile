@@ -41,6 +41,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # https://github.com/rspec/rspec-rails
   gem 'rspec-rails', '~> 3.7'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'rails-controller-testing'
   gem 'factory_girl_rails', '~>4.9.0'
   gem 'faker'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
