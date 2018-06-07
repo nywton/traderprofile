@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @operation.stock %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @operation.user %>
+</p>
+
+<p>
+  <strong>In strategy:</strong>
+  <%= @operation.in_strategy %>
+</p>
+
+<p>
+  <strong>Out strategy:</strong>
+  <%= @operation.out_strategy %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @operation.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @operation.end_time %>
+</p>
+
+<p>
+  <strong>Tp price:</strong>
+  <%= @operation.tp_price %>
+</p>
+
+<p>
+  <strong>Sl price:</strong>
+  <%= @operation.sl_price %>
+</p>
+
+<p>
+  <strong>Max profit:</strong>
+  <%= @operation.max_profit %>
+</p>
+
+<p>
+  <strong>Max loss:</strong>
+  <%= @operation.max_loss %>
+</p>
+
+<p>
+  <strong>Obs:</strong>
+  <%= @operation.obs %>
+</p>
+
+<%= link_to 'Edit', edit_operation_path(@operation) %> |
+<%= link_to 'Back', operations_path %>

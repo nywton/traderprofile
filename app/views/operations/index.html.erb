@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Operations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Stock</th>
+      <th>User</th>
+      <th>In strategy</th>
+      <th>Out strategy</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>Tp price</th>
+      <th>Sl price</th>
+      <th>Max profit</th>
+      <th>Max loss</th>
+      <th>Obs</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @operations.each do |operation| %>
+      <tr>
+        <td><%= operation.stock %></td>
+        <td><%= operation.user %></td>
+        <td><%= operation.in_strategy %></td>
+        <td><%= operation.out_strategy %></td>
+        <td><%= operation.start_time %></td>
+        <td><%= operation.end_time %></td>
+        <td><%= operation.tp_price %></td>
+        <td><%= operation.sl_price %></td>
+        <td><%= operation.max_profit %></td>
+        <td><%= operation.max_loss %></td>
+        <td><%= operation.obs %></td>
+        <td><%= link_to 'Show', operation %></td>
+        <td><%= link_to 'Edit', edit_operation_path(operation) %></td>
+        <td><%= link_to 'Destroy', operation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Operation', new_operation_path %>
