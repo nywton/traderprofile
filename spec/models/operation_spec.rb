@@ -5,4 +5,6 @@ RSpec.describe Operation, type: :model do
   it { should belong_to(:user)}
 
   it { should belong_to(:stock)}
+
+  it { should validate_presence_of(:account_type)}
 end

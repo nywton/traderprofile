@@ -2,6 +2,8 @@ class Operation < ApplicationRecord
   belongs_to :stock
   belongs_to :user
 
+  validates_presence_of :account_type
+
   enum account_type: { demo: 0, real: 1 }
 
   def in_price
