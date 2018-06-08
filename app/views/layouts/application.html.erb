@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Traderprof</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Profit Profile</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
   </head>
 
   <body>
-    <%= yield %>
+  <div class="container-fluid" id="wrapper">
+    <div class="row">
+      <%= render partial: 'layouts/nav' %>
+      <main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
+        <header class="page-header row justify-center">
+          <div class="col-md-6 col-lg-8" >
+            <h2 class="float-left text-center text-md-left">Feed</h2>
+          </div>
+          <div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="http://nywton.herokuapp.com/img/profile.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+            <div class="username mt-1">
+              <h4 class="mb-1">Trader</h4>
+              <small class="text-muted"><%= current_user.email %></small>
+            </div>
+          </a>
+            <div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> View Profile</a>
+              <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Preferences</a>
+              <a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Logout</a></div>
+          </div>
+          <div class="clear"></div>
+        </header>
+        <section class="row">
+          <div class="col-sm-12">
+            <%= yield %>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
   </body>
 </html>

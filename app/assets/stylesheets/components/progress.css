@@ -1,0 +1,20 @@
+.user-progress {
+    margin-top: 1rem; }
+.user-progress .profile-photo {
+    max-height: 75px;
+    max-width: 75px !important; }
+
+.progress-custom {
+    margin-top: .25rem;
+    background-color: #f7f7f7;
+    padding: 0;
+    height: 6px; }
+
+.progress-label {
+    text-align: center !important;
+    color: #7376df;
+    font-size: .75rem;
+    margin-top: -.25rem; }
+
+.progress-bar {
+    height: 6px; }

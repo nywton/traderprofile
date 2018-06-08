@@ -11,5 +11,36 @@
  * It is generally better to create a new file per style scope.
  *
  *= require bootstrap/bootstrap.min
+
+ *= require components/structure
+ *= require components/buttons
+ *= require components/alerts
+ *= require components/cards
+ *= require components/datetime
+ *= require components/forms
+ *= require components/helpers
+ *= require components/lists
+ *= require components/navigations
+ *= require components/progress
+ *= require components/tables
+
  *= require_self
  */
+
+
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i");
+
+
+/*Login Page*/
+.login-page {
+    background: #f7f7f7; }
+.login-page .login-panel .btn {
+    display: block;
+    width: 100%; }
+
+/*Error Page*/
+.error-page {
+    background: #f7f7f7; }
+.error-page h1 {
+    font-size: 4rem; }

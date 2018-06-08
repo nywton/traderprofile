@@ -1,0 +1,32 @@
+#calendar, .datepicker-inline {
+    width: 100%;
+    text-align: center; }
+
+#calendar table {
+    width: 100%; }
+
+.datepicker-switch {
+    font-size: 16px;
+    height: 46px !important; }
+
+.datepicker table tr td.old, .datepicker table tr td.new {
+    color: #dfdfdf; }
+
+.datepicker table tr td {
+    padding: 2px 2px !important;
+    cursor: pointer;
+    border-radius: .3rem; }
+
+#calendar th {
+    text-align: center !important;
+    cursor: pointer;
+    border-radius: .3rem; }
+
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+    color: #ffffff;
+    background-color: #7376df;
+    text-shadow: none;
+    border-color: #285e8e; }
+
+.datepicker table tr td span:hover, .datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover, .datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
+    background-color: #f7f7f7; }

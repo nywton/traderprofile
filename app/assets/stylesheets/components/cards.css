@@ -1,0 +1,50 @@
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dfdfdf; }
+
+.card.bg-primary, .card.bg-success, .card.bg-info, .card.bg-warning, .card.bg-danger {
+    border: 1px solid rgba(0, 0, 0, 0.125); }
+
+.card-block {
+    padding: 1rem; }
+
+.card-title {
+    padding-bottom: .25rem;
+    margin-bottom: 1rem; }
+
+.card-subtitle {
+    margin-top: -.75rem;
+    padding-bottom: .5rem; }
+
+.card-title-btn-container {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    list-style: none; }
+
+.card-footer {
+    background: #f7f7f7;
+    border-top: 1px solid #dfdfdf;
+    margin: -1rem !important;
+    margin-top: 1rem !important; }
+
+.card-header {
+    padding: .75rem 1.25rem; }
+
+.bg-default .card-header {
+    background: #f7f7f7;
+    border-bottom: 1px solid #dfdfdf; }
+
+.card-header-tabs .nav-link:hover,
+.card-header-pills .nav-link:hover {
+    background-color: #ffffff;
+    border-color: #dfdfdf; }
+
+.card-header-tabs .nav-link:hover {
+    border-bottom: 1px solid #ffffff; }
+
+.card-header-tabs .active {
+    background: #ffffff !important;
+    border-color: #dfdfdf !important;
+    border-bottom-color: #ffffff !important;
+    color: #444444 !important; }

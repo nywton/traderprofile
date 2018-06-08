@@ -1,0 +1,16 @@
+/*Tables*/
+.dataTables_info, .dataTables_paginate {
+    margin-top: 1rem !important; }
+
+.page-item.active .page-link {
+    color: #ffffff !important; }
+
+.page-item .page-link {
+    outline: none !important;
+    color: #444444 !important; }
+
+.dataTables_wrapper {
+    padding: 0; }
+
+table, td, tr, th, thead {
+    border-color: #dfdfdf !important; }
