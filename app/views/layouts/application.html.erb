@@ -26,7 +26,7 @@
       <main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
         <header class="page-header row justify-center">
           <div class="col-md-6 col-lg-8" >
-            <h2 class="float-left text-center text-md-left">Feed</h2>
+            <!--<h2 class="float-left text-center text-md-left">Feed</h2>-->
           </div>
           <div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img src="http://nywton.herokuapp.com/img/profile.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
@@ -41,10 +41,9 @@
           </div>
           <div class="clear"></div>
         </header>
-        <section class="row">
-          <div class="col-sm-12">
-            <%= yield %>
-          </div>
+
+        <section>
+          <%= yield %>
         </section>
       </main>
     </div>
