@@ -10,7 +10,22 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
+//= require jquery
+//= require jquery_ujs
 //= require activestorage
-//= require turbolinks
+// require turbolinks
 //= require bootstrap/bootstrap.min
+
+
+// Set Active class Dinamically on Side bar
+$(document).ready(function() {
+    var url = window.location;
+    // var element = $('ul.nav a').filter(function() {
+    //     return this.href == url;
+    // }).addClass('active').parent().parent().addClass('in').parent();
+    var element = $('ul.nav a').filter(function() {
+        console.log(this.href);
+        console.log(url);
+        return this.href == url;
+    }).addClass('active').parent();
+});
