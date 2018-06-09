@@ -10,6 +10,12 @@ class Operation < ApplicationRecord
     #TODO get first order price
   end
 
+  # Buy or Sell order
+  def order_type
+    #TOdo get first order to show type
+    "Compra"
+  end
+
   def out_price
     #TODO get order that closes the first order
   end

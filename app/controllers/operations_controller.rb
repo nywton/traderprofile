@@ -69,6 +69,6 @@ class OperationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def operation_params
-      params.require(:operation).permit(:stock_id, :user_id, :in_strategy, :out_strategy, :start_time, :end_time, :tp_price, :sl_price, :max_profit, :max_loss, :obs)
+      params.require(:operation).permit(:stock_id, :user_id, :in_strategy, :out_strategy, :start_time, :end_time, :tp_price, :sl_price, :max_profit, :max_loss, :obs, :account_type)
     end
 end
