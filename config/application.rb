@@ -15,5 +15,19 @@ module Traderprof
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    #
+    #
+    # config.autoload_paths += %W(#{config.root}/app #{config.root}/lib)
+    # config.autoload_paths += Dir[Rails.root.join('app', 'serializers', '{**}')]
+    config.time_zone = 'Brasilia'
+
+    # config.to_prepare do
+    #   Devise::SessionsController.layout 'devise'
+    # end
+
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+    config.i18n.enforce_available_locales = false
+    config.i18n.available_locales = [:'pt-BR']
+    config.i18n.default_locale = :'pt-BR'
   end
 end
