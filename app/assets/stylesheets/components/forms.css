@@ -10,9 +10,6 @@
     background-color: #7376df !important;
     border-radius: 499px; }
 
-.nav-pills .nav-link.active, .badge-primary[href]:focus, .badge-primary[href]:hover, a.bg-primary:focus, a.bg-primary:hover {
-    background-color: #6365d2 !important; }
-
 .form-control:focus {
     border-color: #7376df !important; }
 

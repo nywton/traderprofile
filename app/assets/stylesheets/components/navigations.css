@@ -12,7 +12,8 @@
     overflow-x: hidden;
     overflow-y: auto;
     /* Scrollable contents if viewport is shorter than content. */
-    background: #7376df; }
+    /*background: #7376df; }*/
+    background: #607D8B; }
 .sidebar a {
     color: #ffffff;
     text-transform: uppercase;
@@ -20,7 +21,9 @@
     letter-spacing: .2rem;
     padding: .75rem 1rem; }
 .sidebar em {
-    font-size: 1rem; }
+    font-size: 1rem;
+    display: inline-flex;
+    vertical-align: middle; }
 .sidebar h1 {
     color: #ffffff;
     border: none;
@@ -66,7 +69,7 @@
     background: rgba(0, 0, 0, 0.5) !important;
     color: #ffffff !important; }
 .sidebar .nav ul.children li a:hover {
-    background: #6365d2 !important;
+    background: #455a64 !important;
     color: #ffffff !important; }
 
 #wrapper.toggled .sidebar-nav {
@@ -78,7 +81,7 @@
     right: 1rem; }
 
 .sidebar a:focus, .sidebar a:hover, .sidebar a:active {
-    background-color: #6365d2 !important; }
+    background-color: #546e7a !important; }
 
 @media screen and (max-width: 576px) {
     #wrapper .sidebar-nav {
@@ -113,5 +116,8 @@
 .user-dropdown .dropdown-toggle::after {
     margin-top: 1rem;
     margin-left: 1rem; }
+
+.nav-pills .nav-link.active, .badge-primary[href]:focus, .badge-primary[href]:hover, a.bg-primary:focus, a.bg-primary:hover {
+    background-color: #455a64 !important; }
 
 /* == END SIDENAV ==*/
