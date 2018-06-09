@@ -26,23 +26,27 @@
   <div class="container-fluid" id="wrapper">
     <div class="row">
       <%= render partial: 'layouts/nav' %>
-      <main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
+      <main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 ml-auto">
         <header class="page-header row justify-center">
-          <div class="col-md-6 col-lg-8" >
-            <h2 class="float-left text-md-left"><%= yield(:section_title) %></h2>
-          </div>
-          <div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="dropdown user-dropdown col-md-6 col-lg-4">
+            <!--<a class="btn btn-stripped dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+
+            <!--</a>-->
             <img src="http://nywton.herokuapp.com/img/profile.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
             <div class="username mt-1">
               <h4 class="mb-1">Trader</h4>
               <small class="text-muted"><%= current_user.email %></small>
             </div>
-          </a>
-            <div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> View Profile</a>
-              <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Preferences</a>
-              <a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Logout</a></div>
+            <!--<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> View Profile</a>-->
+              <!--<a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Preferences</a>-->
+              <!--<a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Logout</a>-->
+            <!--</div>-->
           </div>
           <div class="clear"></div>
+          <div class="col-md-6 col-lg-4" >
+            <!--<h2 class="float-left text-md-left"><%= yield(:section_title) %></h2>-->
+            <%= search_bar yield(:search_bar) %>
+          </div>
         </header>
 
         <section>

@@ -1,8 +1,10 @@
 body {
-    background-color: #ffffff;
+    background-color: #fafafa;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     color: #444444;}
+
+header { background-color: #fff; }
 
 h1, h2 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -111,6 +113,7 @@ p {
     margin-top: 0rem;
     margin-bottom: 2.4rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
     border-bottom: 1px solid #dfdfdf;
     height: auto; }
 .page-header h1 {
