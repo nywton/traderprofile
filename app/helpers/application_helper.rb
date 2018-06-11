@@ -8,6 +8,6 @@ module ApplicationHelper
   end
 
   def search_bar(arg)
-    text_field_tag 'search', nil, placeholder: 'Buscar...', class: 'form-control'
+    text_field_tag 'search', nil, placeholder: 'Buscar...', class: 'form-control search-bar'
   end
 end

@@ -108,6 +108,9 @@ p {
     text-decoration: none; }
 
 
+.search-bar {
+    background-color: #fafafa !important;
+}
 .page-header {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-top: 0rem;
