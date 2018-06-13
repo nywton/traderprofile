@@ -25,7 +25,7 @@ class OperationsController < ApplicationController
   # POST /operations.json
   def create
     @operation = Operation.new(operation_params)
-
+    @operation.user_id = current_user.id
     respond_to do |format|
       if @operation.save
         format.html { redirect_to @operation, notice: 'Operation was successfully created.' }

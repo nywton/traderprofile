@@ -237,6 +237,8 @@
   activerecord:
     models:
       user: Usuário
+      stock: Ativo
+      operation: Operação
       user_group: Grupo de Usuário
       strategic_objective: Objetivo Estratégico
       department: Setor
@@ -257,73 +259,22 @@
         receive_notifications: Receber notificações
         avatar: Imagem Perfil
         agency: Instituição
-        plan: Plano
         cpf: CPF
         phone: Telefone
-        department: Setor
       user_group:
         name: Nome
         permissions: Permissões
-      strategic_objective:
-        name: Nome
-        description: Descrição
-        plan: Plano
-        image: Imagem
-      department:
-        name: Nome
-        manager: Responsável
-      announcement:
-        what_to_announce: Texto
-      project:
-        title: Título
-        cod: Código Ident.
-        description: Descrição
-        manager: Gerente
-        user_id: Gerente
-        department: Setor
-        department_id: Setor
-        strategic_objective: 
-          one: Objetivo Estratégico
-          other: Objetivos Estratégicos
-        strategic_objective_id: Objetivo Estratégico
-        rescheduled_count_string: Marco/Entrega Repactuado
-        status:
-          late: Atrasado
-          in_progress: Iniciado
-          not_started: Não Iniciado
-          completed: Concluído
-      milestone:
-        title: Título
-        cod: Código Ident.
-        manager: Responsável
-        user_id: Responsável
-        project: Ação
-        project_id: Ação
-        scheduled_start: Início Previsto
-        scheduled_start_rescheduled: Início Previsto (Repactuado)
-        scheduled_end: Término Previsto
-        scheduled_end_rescheduled: Término Previsto (Repactuado)
-        real_start: Data Início
-        real_end: Data Término
-        has_deliverable: Entrega?
-        status: Status
-        late: Atrasado
-        evidenced: Evidenciado
-        rescheduled: Repactuado?
-        evidence_type: Tipo de Evidência
-      calendar:
-        start: Iníc
-        end: Térm
-      evidence:
-        name: Título
-        comment: Observação
-      agency:
-        name: Nome
-        initials: Sigla
-      plan:
-        name: Nome
-        description: Descrição
-        agency: Instituição
+      operation:
+        stock: Ativo
+        in_strategy: Estratégia de Entrada
+        out_strategy: Estratégia de Saída
+        start_time: Início
+        end_time: Término
+        tp_price: Take Profit
+        sl_price: Stop Loss
+        max_profit: Max Profit Não Realizado
+        max_loss: Max Loss Não Realizado
+        account_type: Tipo de Conta
     errors:
       <<: *errors
     audit:
@@ -338,7 +289,7 @@
 
   helpers:
     submit:
-      create: 'Criar %{model}'
+      create: 'Salvar'
       update: 'Salvar'
       user:
         create: 'Novo %{model}'

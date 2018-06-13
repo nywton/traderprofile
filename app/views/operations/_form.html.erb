@@ -1,24 +1,48 @@
-
 <%= simple_form_for(@operation) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.association :stock %>
-    <%= f.association :user %>
-    <%= f.input :in_strategy %>
-    <%= f.input :out_strategy %>
-    <%= f.input :start_time %>
-    <%= f.input :end_time %>
-    <%= f.input :tp_price %>
-    <%= f.input :sl_price %>
-    <%= f.input :max_profit %>
-    <%= f.input :max_loss %>
-    <%= f.input :account_type, as: :select, collection: Operation.account_types.keys %>
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= f.input :account_type, as: :select, collection: Operation.account_types.keys %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= f.association :stock %>
+      </div>
+
+      <div class="col-md-4">
+        <%= f.input :start_time, as: :string %>
+      </div>
+
+      <div class="col-md-4">
+        <%= f.input :end_time, as: :string %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6"><%= f.input :in_strategy %></div>
+      <div class="col-md-6"><%= f.input :out_strategy %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"><%= f.input :tp_price %></div>
+      <div class="col-md-3"><%= f.input :sl_price %></div>
+      <div class="col-md-3"><%= f.input :max_profit %></div>
+      <div class="col-md-3"><%= f.input :max_loss %></div>
+    </div>
+
+
     <%= f.input :obs %>
   </div>
 
+  <br>
+
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: 'btn-primary pull-right' %>
   </div>
 <% end %>
