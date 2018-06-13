@@ -21,6 +21,8 @@ input[type=checkbox]:checked + label {
 .form-control {
     border: 1px solid #dfdfdf;
     background-color: #ffffff;
+    box-shadow: none !important;
+    border-radius: 0 !important;
     box-shadow: none; }
 
 input.form-control {

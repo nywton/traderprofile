@@ -53,6 +53,7 @@
     text-transform: uppercase;
     letter-spacing: .1rem;
     font-size: .75rem;
+    border-radius: 0px !important;
     padding: .6rem 1.15rem;
     cursor: pointer; }
 
