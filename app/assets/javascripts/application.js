@@ -15,17 +15,19 @@
 //= require activestorage
 // require turbolinks
 //= require bootstrap/bootstrap.min
-
-
+//= require datetime-picker/bootstrap-datetimepicker.min
+//= require datetime-picker/bootstrap-datetimepicker.pt-BR
 // Set Active class Dinamically on Side bar
+
+
 $(document).ready(function() {
     var url = window.location;
     // var element = $('ul.nav a').filter(function() {
     //     return this.href == url;
     // }).addClass('active').parent().parent().addClass('in').parent();
     var element = $('ul.nav a').filter(function() {
-        console.log(this.href);
-        console.log(url);
         return this.href == url;
     }).addClass('active').parent();
+
+    $(".form-datetime").datetimepicker({format: 'dd/mm/yyyy hh:ii', language: 'br'});
 });

@@ -11,16 +11,17 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-5">
         <%= f.association :stock %>
       </div>
 
-      <div class="col-md-4">
-        <%= f.input :start_time, as: :string %>
+      <div class="col-md-3">
+        <%= f.input :start_time, as: :string, class: 'form-datetime',
+                    input_html: {class: 'form-datetime', value: l(f.object.start_time || Time.now, format: :print)} %>
       </div>
 
-      <div class="col-md-4">
-        <%= f.input :end_time, as: :string %>
+      <div class="col-md-3">
+        <%= f.input :end_time, as: :string, input_html: {class: 'form-datetime', value: l(f.object.end_time || Time.now, format: :print)} %>
       </div>
     </div>
 

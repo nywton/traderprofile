@@ -3,6 +3,7 @@ class Operation < ApplicationRecord
   belongs_to :user
 
   validates_presence_of :account_type
+  validate :end_cannot_be_less_than_start
 
   enum account_type: { demo: 0, real: 1 }
 
@@ -30,5 +31,12 @@ class Operation < ApplicationRecord
 
   def status
     #TODO returns if is open/closed
+  end
+
+  private
+  def end_cannot_be_less_than_start
+    if start_time.present? && end_time < start_time
+      errors.add(:end_time, 'deve ser maior que Início')
+    end
   end
 end
